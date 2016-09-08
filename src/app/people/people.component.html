@@ -1,0 +1,11 @@
+<div class="container customer">
+
+    <div class="table-responsive">
+        <div class="bs-example">
+            <form role="form">
+                <input class="form-control"  name="searchKey" placeholder="请输入关键字" [(ngModel)]="searchKey">
+            </form>
+        </div>
+        <people-list [Peoples]="peoples" [SearchKey]="searchKey"></people-list>
+    </div>
+</div>
